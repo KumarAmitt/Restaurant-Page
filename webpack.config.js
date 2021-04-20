@@ -14,6 +14,10 @@ module.exports = {
       {
         test: /\.(sc|c)ss$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader', 'postcss-loader']
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: ['file-loader']
       }
     ]
   },
