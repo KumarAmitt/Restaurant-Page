@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
+
+
+
 body {
-  background-color: red;
+  background: url('../images/biriyani.jpg');
+  background-size: cover;
+}
+
+.logo {
+  font-family: 'Meddon', cursive;
+  font-size: 2rem;
+  color: yellow;
 }
