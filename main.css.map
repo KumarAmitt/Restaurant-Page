@@ -1,1 +1,1 @@
-{"version":3,"sources":["webpack://Restaurant-Page/./src/stylesheets/style.scss"],"names":[],"mappings":"AAAA;EACE;AACF,C","file":"main.css","sourcesContent":["body {\n  background-color: red;\n}"],"sourceRoot":""}
+{"version":3,"sources":["webpack://Restaurant-Page/./src/stylesheets/style.scss"],"names":[],"mappings":";AAGA,MACE,6BACA,eACA,W","file":"main.css","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');\n\n\n.logo {\n  font-family: 'Meddon', cursive;\n  font-size: 2rem;\n  color: yellow;\n}"],"sourceRoot":""}

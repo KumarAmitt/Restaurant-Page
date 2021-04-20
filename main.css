@@ -1,5 +1,4 @@
-body {
-  background-color: mediumaquamarine;
-}
+@import url(https://fonts.googleapis.com/css2?family=Meddon&display=swap);
+.logo{font-family:"Meddon",cursive;font-size:2rem;color:#ff0}
 
 /*# sourceMappingURL=main.css.map*/
