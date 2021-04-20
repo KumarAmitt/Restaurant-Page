@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://Restaurant-Page/./src/stylesheets/style.scss"],"names":[],"mappings":"AAAA;EACE;AACF,C","file":"main.css","sourcesContent":["body {\n  background-color: red;\n}"],"sourceRoot":""}
