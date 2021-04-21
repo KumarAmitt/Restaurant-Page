@@ -36,18 +36,17 @@ coverContent.appendChild(coverP2)
 
 // feature-recipe
 
-const featRecipe = createElement('div');
-featRecipe.classList.add('feat-recipe')
+const featRecipe = createElement({tag: 'div', cls: 'feat-recipe'});
 content.appendChild(featRecipe)
 
-let featRecipeImg = createElement('img')
+let featRecipeImg = createElement({tag: 'img'})
 featRecipeImg.src = alooPuri
 
 featRecipe.appendChild(featRecipeImg)
 
 //About
 
-const main = createElement('main')
+const main = createElement({tag: 'main'})
 content.appendChild(main)
 
 main.appendChild(about())
