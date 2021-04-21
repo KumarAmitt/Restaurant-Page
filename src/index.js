@@ -1,5 +1,7 @@
-import './stylesheets/style.scss'
-import alooPuri from './images/aloo_puri.jpg'
+import './stylesheets/style.scss';
+import alooPuri from './images/aloo_puri.jpg';
+
+import { footer } from './js/footer'
 
 
 let createElement = element => document.createElement(element);
@@ -29,6 +31,9 @@ linkText.forEach(el => {
 
   navLink.innerText = el;
 
+  navLink.addEventListener('click', () => {
+    alert(`From ${el}`)
+  })
 })
 
 
@@ -90,10 +95,5 @@ desc.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eli
 
 //Footer
 
-const footerDiv = createElement('footer')
-content.appendChild(footerDiv)
-const footerText = createElement('p')
-footerDiv.appendChild(footerText)
-footerText.innerHTML = '&copy; 2021 zaika'
-
+content.appendChild(footer())
 
