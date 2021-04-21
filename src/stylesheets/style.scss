@@ -59,6 +59,7 @@ nav {
   height: 60vh;
   margin-top: 8.4em;
   backdrop-filter: blur(4px);
+  padding-top: 1.4em;
 
   &-content {
     text-align: center;
@@ -82,6 +83,13 @@ nav {
   }
 }
 
-img {
-  width: 20%;
+.feat-recipe {
+  position: absolute;
+  width: 100%;
+  top: 50vh;
+  text-align: center;
+
+  img {
+    width: 70%;
+  }
 }
