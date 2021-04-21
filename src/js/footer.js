@@ -7,7 +7,6 @@ export const footer = ({appendTo}) => {
   const footerP = createElement({appendTo: footerDiv, tag: 'p'})
   footerP.innerHTML = footerText
 
-  // return footerDiv
 }
 
 

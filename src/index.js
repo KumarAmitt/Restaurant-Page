@@ -10,7 +10,7 @@ import { footer } from './js/footer'
 const content = document.getElementById('content');
 
 //Nav
-content.appendChild(nav())
+nav({appendTo: content})
 
 
 //cover
