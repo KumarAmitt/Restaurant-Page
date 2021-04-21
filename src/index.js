@@ -70,7 +70,12 @@ featRecipeImg.src = alooPuri
 featRecipe.appendChild(featRecipeImg)
 
 
+//Footer
 
-
+const footerDiv = createElement('footer')
+content.appendChild(footerDiv)
+const footerText = createElement('p')
+footerDiv.appendChild(footerText)
+footerText.innerHTML = '&copy; 2021 zaika'
 
 
