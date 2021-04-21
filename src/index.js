@@ -46,7 +46,7 @@ coverDiv.appendChild(coverContent)
 const coverP1 = createElement('p')
 coverP1.classList.add('cover-p1')
 coverContent.appendChild(coverP1)
-coverP1.textContent = 'Welcome to'
+coverP1.textContent = 'Welcome to '
 
 const p1Span = createElement('span')
 coverP1.appendChild(p1Span)
@@ -56,6 +56,8 @@ const coverP2 = createElement('p')
 coverP2.classList.add('cover-p2')
 coverContent.appendChild(coverP2)
 coverP2.textContent = 'Where Food Speaks with your plate!'
+
+
 // feature-recipe
 
 const featRecipe = createElement('div');
