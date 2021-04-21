@@ -1,43 +1,37 @@
 import './stylesheets/style.scss';
 import alooPuri from './images/aloo_puri.jpg';
 
+import { createElement } from './js/tools'
 import { nav } from './js/nav'
 import { about } from './js/about'
 import { footer } from './js/footer'
 
 
-let createElement = element => document.createElement(element);
+// let createElement = element => document.createElement(element);
 
 
 const content = document.getElementById('content');
 
+//Nav
 content.appendChild(nav())
 
 
 //cover
 
-const coverDiv = createElement('div')
-coverDiv.classList.add('cover')
+const coverDiv = createElement({tag: 'div', cls: 'cover'})
 content.appendChild(coverDiv)
 
-
-const coverContent = createElement('div')
-coverContent.classList.add('cover-content')
+const coverContent = createElement({tag: 'div', cls: 'cover-content'})
 coverDiv.appendChild(coverContent)
 
-const coverP1 = createElement('p')
-coverP1.classList.add('cover-p1')
+const coverP1 = createElement({tag: 'p', cls: 'cover-p1', txt: 'Welcome to '})
 coverContent.appendChild(coverP1)
-coverP1.textContent = 'Welcome to '
 
-const p1Span = createElement('span')
+const p1Span = createElement({tag: 'span', txt: 'zaika'})
 coverP1.appendChild(p1Span)
-p1Span.textContent = 'zaika'
 
-const coverP2 = createElement('p')
-coverP2.classList.add('cover-p2')
+const coverP2 = createElement({tag: 'p', cls: 'cover-p2', txt: 'Where Food Speaks with your plate!'})
 coverContent.appendChild(coverP2)
-coverP2.textContent = 'Where Food Speaks with your plate!'
 
 
 // feature-recipe
