@@ -31,9 +31,7 @@ featRecipeImg.src = alooPuri
 
 //About
 
-const main = createElement({tag: 'main'})
-content.appendChild(main)
-
+const main = createElement({appendTo: content, tag: 'main'})
 main.appendChild(about())
 
 //Footer
