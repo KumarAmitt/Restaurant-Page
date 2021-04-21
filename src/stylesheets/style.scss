@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
 
-
 body {
   background: url('../images/biriyani.jpg') fixed;
   background-size: cover;
@@ -16,6 +15,11 @@ nav {
   justify-content: space-between;
   background: linear-gradient(to bottom right, rgba(3, 38, 35, 0.3), rgba(3, 38, 35, 0.7));
   backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
 
   .logo {
     //border: 1px solid blue;
@@ -44,5 +48,18 @@ nav {
     }
   }
 }
+
+.feat-recipe {
+  border: 2px solid red;
+  width: 40%;
+  margin-top: 3.6em;
+  margin-left: 1.6em;
+
+  img {
+    width: 100%;
+    opacity: 0.9;
+  }
+}
+
 
 

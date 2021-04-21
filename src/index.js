@@ -1,4 +1,5 @@
 import './stylesheets/style.scss'
+import alooPuri from './images/aloo_puri.jpg'
 
 
 let createElement = element => document.createElement(element);
@@ -29,3 +30,18 @@ linkText.forEach(el => {
   navLink.innerText = el;
 
 })
+
+
+// feature-recipe
+
+const featRecipe = createElement('div');
+featRecipe.classList.add('feat-recipe')
+content.appendChild(featRecipe)
+
+let featRecipeImg = createElement('img')
+featRecipeImg.src = alooPuri
+
+featRecipe.appendChild(featRecipeImg)
+
+
+
