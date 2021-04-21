@@ -1,4 +1,22 @@
 @import url(https://fonts.googleapis.com/css2?family=Meddon&display=swap);
-.logo{font-family:"Meddon",cursive;font-size:2rem;color:#ff0}
+body {
+  background: url(072950fca23616d83259da27d6b472c8.jpg) fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  font-family: "Meddon", cursive;
+  font-size: 2rem;
+  color: yellow;
+}
 
 /*# sourceMappingURL=main.css.map*/
