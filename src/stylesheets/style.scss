@@ -1,65 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
 
 body {
-  background: url('../images/biriyani.jpg') fixed;
+  background: url("../images/biriyani.jpg") fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
-//NAVBAR--------------
+// NAVBAR
 
 nav {
-  //border: 2px solid red;
-  display: flex;
-  justify-content: space-between;
-  background: linear-gradient(to bottom right, rgba(3, 38, 35, 0.3), rgba(3, 38, 35, 0.7));
+  text-align: center;
+  background: linear-gradient(
+    to bottom right,
+    rgba(3, 38, 35, 0.3),
+    rgba(3, 38, 35, 0.7)
+  );
   backdrop-filter: blur(4px);
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
   z-index: 10;
 
   .logo {
-    //border: 1px solid blue;
-    font-family: 'Meddon', cursive;
-    font-size: 2rem;
     color: yellow;
+    font-family: "Meddon", cursive;
+    font-size: 1.8rem;
     margin-top: -0.3em;
-    margin-left: 0.4em;
   }
 
   .nav-links {
-    //border: 2px solid blue;
-    color: #fff;
-    padding-left: 0;
     list-style-type: none;
+    padding-left: 0;
+    color: #fff;
     display: flex;
-    align-items: center;
-    margin: auto 2em;
+    justify-content: space-around;
+  }
+
+  .nav-link {
+    padding: 0.2em 0.5em;
     font-size: 1.4rem;
-
-    .nav-link {
-      //border: 1px solid yellow;
-      margin: 0 1em;
-      padding: 0.2em 0.5em;
-      cursor: pointer;
-    }
+    cursor: pointer;
+    text-transform: uppercase;
   }
 }
 
-.feat-recipe {
-  border: 2px solid red;
-  width: 40%;
-  margin-top: 3.6em;
-  margin-left: 1.6em;
-
-  img {
-    width: 100%;
-    opacity: 0.9;
-  }
+img {
+  width: 20%;
 }
-
-
-
