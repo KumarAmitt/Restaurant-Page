@@ -1,6 +1,7 @@
 import './stylesheets/style.scss';
 import alooPuri from './images/aloo_puri.jpg';
 
+import { about } from './js/about'
 import { footer } from './js/footer'
 
 
@@ -79,19 +80,7 @@ featRecipe.appendChild(featRecipeImg)
 const main = createElement('main')
 content.appendChild(main)
 
-const aboutPage = createElement('div')
-main.appendChild(aboutPage)
-
-const title = createElement('h1')
-title.classList.add('title')
-aboutPage.appendChild(title)
-title.textContent = 'About Us'
-
-const desc = createElement('p')
-desc.classList.add('desc')
-aboutPage.appendChild(desc)
-desc.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi inventore itaque officia et magni voluptatibus aliquam nihil cupiditate nemo. Explicabo iure ullam quis quo distinctio quod voluptatem corporis, similique eveniet inventore expedita dolorem repellendus animi, facere aut ipsum veniam ad.'
-
+main.appendChild(about())
 
 //Footer
 
