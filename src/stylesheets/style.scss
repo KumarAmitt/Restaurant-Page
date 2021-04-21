@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meddon&family=Montserrat&display=swap");
 
 body {
   background: url("../images/biriyani.jpg") fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
 }
 
@@ -79,6 +79,7 @@ nav {
   }
 
   &-p2 {
+    font-size: 1.1rem;
     text-transform: capitalize;
   }
 }
@@ -91,5 +92,44 @@ nav {
 
   img {
     width: 70%;
+  }
+}
+
+//MAIN ----------------
+
+main {
+  margin-top: 30vh;
+  background: linear-gradient(
+    to bottom right,
+    rgba(3, 38, 35, 0.3),
+    rgba(3, 38, 35, 0.7)
+  );
+  backdrop-filter: blur(4px);
+  padding: 0.5em;
+
+  .title {
+    text-align: center;
+  }
+
+  .desc {
+    padding: 0.5em;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+}
+
+footer {
+  background: linear-gradient(
+    to bottom right,
+    rgba(3, 38, 35, 0.3),
+    rgba(3, 38, 35, 0.7)
+  );
+  backdrop-filter: blur(4px);
+
+  p {
+    margin-bottom: 0;
+    padding: 0.5em;
+    text-align: center;
   }
 }
