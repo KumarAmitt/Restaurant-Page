@@ -7,9 +7,6 @@ import { about } from './js/about'
 import { footer } from './js/footer'
 
 
-// let createElement = element => document.createElement(element);
-
-
 const content = document.getElementById('content');
 
 //Nav
@@ -18,31 +15,19 @@ content.appendChild(nav())
 
 //cover
 
-const coverDiv = createElement({tag: 'div', cls: 'cover'})
-content.appendChild(coverDiv)
-
-const coverContent = createElement({tag: 'div', cls: 'cover-content'})
-coverDiv.appendChild(coverContent)
-
-const coverP1 = createElement({tag: 'p', cls: 'cover-p1', txt: 'Welcome to '})
-coverContent.appendChild(coverP1)
-
-const p1Span = createElement({tag: 'span', txt: 'zaika'})
-coverP1.appendChild(p1Span)
-
-const coverP2 = createElement({tag: 'p', cls: 'cover-p2', txt: 'Where Food Speaks with your plate!'})
-coverContent.appendChild(coverP2)
+const coverDiv = createElement({appendTo: content, tag: 'div', cls: 'cover'})
+const coverContent = createElement({appendTo: coverDiv, tag: 'div', cls: 'cover-content'})
+const coverP1 = createElement({appendTo: coverContent, tag: 'p', cls: 'cover-p1', txt: 'Welcome to '})
+const p1Span = createElement({appendTo: coverP1, tag: 'span', txt: 'zaika'})
+const coverP2 = createElement({appendTo: coverContent, tag: 'p', cls: 'cover-p2', txt: 'Where Food Speaks with your plate!'})
 
 
 // feature-recipe
 
-const featRecipe = createElement({tag: 'div', cls: 'feat-recipe'});
-content.appendChild(featRecipe)
-
-let featRecipeImg = createElement({tag: 'img'})
+const featRecipe = createElement({appendTo: content, tag: 'div', cls: 'feat-recipe'});
+let featRecipeImg = createElement({appendTo: featRecipe, tag: 'img'})
 featRecipeImg.src = alooPuri
 
-featRecipe.appendChild(featRecipeImg)
 
 //About
 
