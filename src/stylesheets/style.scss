@@ -182,7 +182,7 @@ footer {
 
   .feat-recipe {
     width: 40%;
-    bottom: 0;
+    height: calc(100vmin - 4em);
     top: 4em;
     text-align: left;
     margin-left: 1em;
@@ -196,8 +196,8 @@ footer {
   }
 
   main {
-    margin-top: 6em;
     margin-bottom: 2.4em;
+    margin-top: 16vmin;
 
     .title {
        margin-left: 40vw;
@@ -206,7 +206,7 @@ footer {
     }
 
     .desc {
-      margin-top: 2.4em;
+      margin-top: 3.2em;
       padding: 0 2em 1em 20vw;
       line-height: 1.8;
     }
