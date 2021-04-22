@@ -164,6 +164,20 @@ footer {
 
   .cover {
     margin-top: 4em;
+    display: flex;
+    align-items: center;
+
+    &-content {
+      margin-left: 44vw;
+      text-align: left;
+    }
+
+    &-p1 span {
+      font-size: 3.2rem;
+    }
+    &-p2 {
+      letter-spacing: 0.1em;
+    }
   }
 
   .feat-recipe {
