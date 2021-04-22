@@ -1,1 +1,0 @@
-export const footerText = '&copy; 2021 zaika';

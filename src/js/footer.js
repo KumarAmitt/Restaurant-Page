@@ -1,12 +1,11 @@
-import { createElement } from './tools'
-import { footerText } from "./constants";
+import createElement from './tools';
 
+const footerText = '&copy; 2021 zaika';
 
-export const footer = ({appendTo}) => {
-  const footerDiv = createElement({appendTo: appendTo, tag: 'footer'})
-  const footerP = createElement({appendTo: footerDiv, tag: 'p'})
-  footerP.innerHTML = footerText
+const footer = ({ appendTo }) => {
+  const footerDiv = createElement({ appendTo, tag: 'footer' });
+  const footerP = createElement({ appendTo: footerDiv, tag: 'p' });
+  footerP.innerHTML = footerText;
+};
 
-}
-
-
+export default footer;

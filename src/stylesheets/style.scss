@@ -13,11 +13,12 @@ body {
 
 nav {
   text-align: center;
-  background: linear-gradient(
-    to bottom right,
-    rgba(3, 38, 35, 0.3),
-    rgba(3, 38, 35, 0.7)
-  );
+  background:
+    linear-gradient(
+      to bottom right,
+      rgba(3, 38, 35, 0.3),
+      rgba(3, 38, 35, 0.7)
+    );
   backdrop-filter: blur(4px);
   position: fixed;
   top: 0;
@@ -51,11 +52,12 @@ nav {
 //COVER --------------
 
 .cover {
-  background: linear-gradient(
-    to bottom right,
-    rgba(3, 38, 35, 0.3),
-    rgba(3, 38, 35, 0.7)
-  );
+  background:
+    linear-gradient(
+      to bottom right,
+      rgba(3, 38, 35, 0.3),
+      rgba(3, 38, 35, 0.7)
+    );
   height: 60vh;
   margin-top: 8.4em;
   backdrop-filter: blur(4px);
@@ -99,11 +101,12 @@ nav {
 
 main {
   margin-top: 14em;
-  background: linear-gradient(
-    to bottom right,
-    rgba(3, 38, 35, 0.3),
-    rgba(3, 38, 35, 0.7)
-  );
+  background:
+    linear-gradient(
+      to bottom right,
+      rgba(3, 38, 35, 0.3),
+      rgba(3, 38, 35, 0.7)
+    );
   backdrop-filter: blur(4px);
   padding: 0.5em;
 
@@ -134,7 +137,6 @@ main {
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
         padding: 0.5em 2em;
 
-
         span {
           text-transform: capitalize;
           font-weight: bold;
@@ -159,11 +161,12 @@ main {
 }
 
 footer {
-  background: linear-gradient(
-    to bottom right,
-    rgba(3, 38, 35, 0.3),
-    rgba(3, 38, 35, 0.7)
-  );
+  background:
+    linear-gradient(
+      to bottom right,
+      rgba(3, 38, 35, 0.3),
+      rgba(3, 38, 35, 0.7)
+    );
   backdrop-filter: blur(4px);
 
   p {
@@ -173,16 +176,13 @@ footer {
   }
 }
 
-@media(min-width: 420px) {
-
+@media (min-width: 420px) {
   main {
     margin-top: 20em;
   }
-
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -195,6 +195,7 @@ footer {
     .nav-links {
       margin-right: 0.6em;
     }
+
     .nav-link {
       font-size: 1rem;
       margin-left: 1em;
@@ -214,6 +215,7 @@ footer {
     &-p1 span {
       font-size: 3.2rem;
     }
+
     &-p2 {
       letter-spacing: 0.1em;
     }
@@ -222,7 +224,7 @@ footer {
   .feat-recipe {
     width: 40%;
     height: calc(100vmin - 4em);
-    top: 5.2em;
+    top: 4em;
     text-align: left;
     margin-left: 1em;
     z-index: 1;
@@ -239,7 +241,7 @@ footer {
     margin-top: 16vmin;
 
     .title {
-       margin-left: 40vw;
+      margin-left: 40vw;
       font-size: 2.6rem;
       color: yellow;
     }
@@ -255,8 +257,6 @@ footer {
         margin-left: 20%;
         justify-content: space-between;
       }
-
     }
   }
-
 }
