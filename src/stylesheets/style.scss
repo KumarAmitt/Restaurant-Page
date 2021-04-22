@@ -116,6 +116,31 @@ main {
     text-align: justify;
     font-size: 1.1rem;
     line-height: 1.4;
+
+    h3 {
+      color: yellow;
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      font-size: 1.1rem;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.4em;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+        padding: 0.5em 2em;
+
+
+        span {
+          text-transform: capitalize;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
 

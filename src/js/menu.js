@@ -26,10 +26,11 @@ export const menu = ({appendTo}) => {
   for(let ctg in menuItems){
     const desc = createElement({appendTo: menuPage, tag: 'p', cls: 'desc'})
     createElement({appendTo: desc, tag: 'h3', cls: 'category', txt: ctg});
-    let ul = createElement({appendTo: desc, tag: 'ul'})
+    const ul = createElement({appendTo: desc, tag: 'ul'})
 
     for(let item in menuItems[ctg]){
-      let li = createElement({appendTo: ul, tag: 'li', txt: item})
+      const li = createElement({appendTo: ul, tag: 'li'})
+      createElement({appendTo: li, tag: 'span', txt: item})
       createElement({appendTo: li, tag: 'span', txt: menuItems[ctg][item]})
     }
   }
