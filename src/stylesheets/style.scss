@@ -129,7 +129,7 @@ footer {
 
   p {
     margin-bottom: 0;
-    padding: 0.5em;
+    padding: 1em;
     text-align: center;
   }
 }
@@ -186,6 +186,7 @@ footer {
     top: 4em;
     text-align: left;
     margin-left: 1em;
+    z-index: 1;
 
     img {
       object-fit: cover;
@@ -194,5 +195,21 @@ footer {
     }
   }
 
+  main {
+    margin-top: 6em;
+    margin-bottom: 2.4em;
+
+    .title {
+       margin-left: 40vw;
+      font-size: 2.6rem;
+      color: yellow;
+    }
+
+    .desc {
+      margin-top: 2.4em;
+      padding: 0 2em 1em 20vw;
+      line-height: 1.8;
+    }
+  }
 
 }
