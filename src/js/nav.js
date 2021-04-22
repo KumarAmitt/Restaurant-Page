@@ -4,6 +4,9 @@ import { about } from './about'
 import { menu } from './menu'
 import { contact } from "./contact";
 
+import golgappa from '../images/golgappa.jpg';
+import dosa from '../images/dosa.jpg';
+import puri from '../images/aloo_puri.jpg';
 
 export const nav = ({appendTo}) => {
   const nav = createElement({appendTo: appendTo, tag: 'nav'});
@@ -17,12 +20,24 @@ export const nav = ({appendTo}) => {
 
     navLink.addEventListener('click', () => {
       displayMainSection(el);
+      setRecipeImg(el);
     })
   })
 }
 
+function setRecipeImg(link){
+  let pic = document.querySelector('.feat-recipe-img')
+  if(link === 'Menu'){
+    pic.src = golgappa
+  }else if (link === 'Contact'){
+    pic.src = dosa
+  }else {
+    pic.src = puri
+  }
+}
+
 function displayMainSection(link){
-  let main = document.querySelector('main')
+  const main = document.querySelector('main')
   removeAllChildNodes(main)
 
   if(link === 'Menu'){

@@ -25,7 +25,7 @@ const coverP2 = createElement({appendTo: coverContent, tag: 'p', cls: 'cover-p2'
 // feature-recipe
 
 const featRecipe = createElement({appendTo: content, tag: 'div', cls: 'feat-recipe'});
-let featRecipeImg = createElement({appendTo: featRecipe, tag: 'img'})
+let featRecipeImg = createElement({appendTo: featRecipe, cls: 'feat-recipe-img', tag: 'img'})
 featRecipeImg.src = alooPuri
 
 
