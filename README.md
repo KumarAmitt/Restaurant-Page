@@ -13,7 +13,7 @@ JavaScript Assignment.
 
 ## Live Demo
 
-[View Live](https://kumaramitt.github.io/Library/)
+[View Live](https://kumaramitt.github.io/Restaurant-Page/)
 
 ## Built With 🛠
 
