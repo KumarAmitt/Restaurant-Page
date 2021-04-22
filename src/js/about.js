@@ -8,3 +8,5 @@ export const about = ({appendTo}) => {
   createElement({appendTo: aboutPage, tag: 'h1', cls: 'title', txt: 'About Us'})
   createElement({appendTo: aboutPage, tag: 'p', cls: 'desc', txt: descText})
 }
+
+
