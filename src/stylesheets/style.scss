@@ -98,7 +98,7 @@ nav {
 //MAIN ----------------
 
 main {
-  margin-top: 30vh;
+  margin-top: 14em;
   background: linear-gradient(
     to bottom right,
     rgba(3, 38, 35, 0.3),
@@ -132,4 +132,53 @@ footer {
     padding: 0.5em;
     text-align: center;
   }
+}
+
+@media(min-width: 420px) {
+
+  main {
+    margin-top: 20em;
+  }
+
+}
+
+@media(min-width: 768px) {
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      margin-left: 0.6em;
+      margin-top: -0.1em;
+    }
+
+    .nav-links {
+      margin-right: 0.6em;
+    }
+    .nav-link {
+      font-size: 1rem;
+      margin-left: 1em;
+    }
+  }
+
+  .cover {
+    margin-top: 4em;
+  }
+
+  .feat-recipe {
+    width: 40%;
+    bottom: 0;
+    top: 4em;
+    text-align: left;
+    margin-left: 1em;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+
 }
