@@ -4,8 +4,6 @@ import alooPuri from './images/aloo_puri.jpg';
 import { createElement } from './js/tools'
 import { nav } from './js/nav'
 import { about } from './js/about'
-import { menu } from './js/menu'
-import { contact } from "./js/contact";
 import { footer } from './js/footer'
 
 
@@ -34,10 +32,7 @@ featRecipeImg.src = alooPuri
 //About
 
 const main = createElement({appendTo: content, tag: 'main'})
-// about({appendTo: main})
-// contact({appendTo: main})
-menu({appendTo: main})
-
+about({appendTo: main})
 
 //Footer
 
