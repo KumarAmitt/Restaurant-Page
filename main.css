@@ -82,7 +82,7 @@ nav .nav-link {
 }
 
 main {
-  margin-top: 30vh;
+  margin-top: 14em;
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(3, 38, 35, 0.3)), to(rgba(3, 38, 35, 0.7)));
   background: linear-gradient(to bottom right, rgba(3, 38, 35, 0.3), rgba(3, 38, 35, 0.7));
   -webkit-backdrop-filter: blur(4px);
@@ -98,6 +98,43 @@ main .desc {
   font-size: 1.1rem;
   line-height: 1.4;
 }
+main .desc h3 {
+  color: yellow;
+  text-transform: uppercase;
+}
+main .desc ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+}
+main .desc ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0.4em;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  padding: 0.5em 2em;
+}
+main .desc ul li span {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+main .desc .cInfo {
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+  font-size: 1.4rem;
+}
+main .desc .cInfo span {
+  display: block;
+  padding-top: 0.5em;
+  font-size: 1rem;
+  color: #fff;
+}
 
 footer {
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(3, 38, 35, 0.3)), to(rgba(3, 38, 35, 0.7)));
@@ -107,8 +144,95 @@ footer {
 }
 footer p {
   margin-bottom: 0;
-  padding: 0.5em;
+  padding: 1em;
   text-align: center;
+}
+
+@media (min-width: 420px) {
+  main {
+    margin-top: 20em;
+  }
+}
+@media (min-width: 768px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  nav .logo {
+    margin-left: 0.6em;
+    margin-top: -0.1em;
+  }
+  nav .nav-links {
+    margin-right: 0.6em;
+  }
+  nav .nav-link {
+    font-size: 1rem;
+    margin-left: 1em;
+  }
+
+  .cover {
+    margin-top: 4em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .cover-content {
+    margin-left: 44vw;
+    text-align: left;
+  }
+  .cover-p1 span {
+    font-size: 3.2rem;
+  }
+  .cover-p2 {
+    letter-spacing: 0.1em;
+  }
+
+  .feat-recipe {
+    width: 40%;
+    height: calc(100vmin - 4em);
+    top: 4em;
+    text-align: left;
+    margin-left: 1em;
+    z-index: 1;
+  }
+  .feat-recipe img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  main {
+    margin-bottom: 2.4em;
+    margin-top: 16vmin;
+  }
+  main .title {
+    margin-left: 40vw;
+    font-size: 2.6rem;
+    color: yellow;
+  }
+  main .desc {
+    margin-top: 3.2em;
+    padding: 0 2em 1em 20vw;
+    line-height: 1.8;
+  }
+  main .desc .cInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    margin-left: 20%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=main.css.map*/
