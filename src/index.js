@@ -12,7 +12,6 @@ const content = document.getElementById('content');
 //Nav
 nav({appendTo: content})
 
-
 //cover
 
 const coverDiv = createElement({appendTo: content, tag: 'div', cls: 'cover'})
