@@ -1,28 +1,10 @@
 import createElement from './tools';
-
-const menuItems = {
-  starter: {
-    'Hot and Sour soup': 99,
-    'Sweet corn soup': 89,
-    'Crispy babycorn chilly': 159,
-    'Garlic Paneer': 159,
-  },
-  tandoor: {
-    'Paneer Angaara tikka': 189,
-    'Tandoori chicken': 169,
-    'Achari fish tikka': 209,
-  },
-  rice: {
-    'chicken fried rice': 159,
-    'egg fried rice': 129,
-    'veg fried rice': 99,
-  },
-};
+import { menuTitle, menuItems } from './texts';
 
 const menu = ({ appendTo }) => {
   const menuPage = createElement({ appendTo, tag: 'div' });
   createElement({
-    appendTo: menuPage, tag: 'h1', cls: 'title', txt: 'Menu',
+    appendTo: menuPage, tag: 'h1', cls: 'title', txt: menuTitle,
   });
 
   Object.entries(menuItems).forEach((item) => {

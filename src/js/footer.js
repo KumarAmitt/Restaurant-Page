@@ -1,6 +1,5 @@
 import createElement from './tools';
-
-const footerText = '&copy; 2021 zaika';
+import { footerText } from './texts';
 
 const footer = ({ appendTo }) => {
   const footerDiv = createElement({ appendTo, tag: 'footer' });

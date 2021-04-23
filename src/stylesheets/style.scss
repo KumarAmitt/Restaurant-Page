@@ -149,12 +149,14 @@ main {
       color: yellow;
       text-align: center;
       font-size: 1.4rem;
+      text-transform: capitalize;
 
       span {
         display: block;
         padding-top: 0.5em;
         font-size: 1rem;
         color: #fff;
+        text-transform: none;
       }
     }
   }
