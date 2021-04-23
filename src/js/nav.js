@@ -1,5 +1,6 @@
 import createElement from './tools';
 
+import { logoText, navTabs } from './texts';
 import about from './about';
 import menu from './menu';
 import contact from './contact';
@@ -8,53 +9,47 @@ import golgappa from '../images/golgappa.jpg';
 import dosa from '../images/dosa.jpg';
 import puri from '../images/aloo_puri.jpg';
 
-function removeAllChildNodes(parent) {
+const removeAllChildNodes = (parent) => {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
   }
-}
+};
 
-function setRecipeImg(link) {
-  const pic = document.querySelector('.feat-recipe-img');
-  if (link === 'Menu') {
-    pic.src = golgappa;
-  } else if (link === 'Contact') {
-    pic.src = dosa;
-  } else {
-    pic.src = puri;
-  }
-}
-
-function displayMainSection(link) {
+const updateFeatAndMain = (link) => {
   const main = document.querySelector('main');
+  const pic = document.querySelector('.feat-recipe-img');
   removeAllChildNodes(main);
 
-  if (link === 'Menu') {
-    menu({ appendTo: main });
-  } else if (link === 'Contact') {
-    contact({ appendTo: main });
-  } else {
-    about({ appendTo: main });
+  switch (link) {
+    case 'Menu':
+      menu({ appendTo: main });
+      pic.src = golgappa;
+      break;
+    case 'Contact':
+      contact({ appendTo: main });
+      pic.src = dosa;
+      break;
+    default:
+      about({ appendTo: main });
+      pic.src = puri;
+      break;
   }
-}
+};
 
 const nav = ({ appendTo }) => {
   const nav = createElement({ appendTo, tag: 'nav' });
   createElement({
-    appendTo: nav, tag: 'div', cls: 'logo', txt: 'zaika',
+    appendTo: nav, tag: 'div', cls: 'logo', txt: logoText,
   });
   const navLinks = createElement({ appendTo: nav, tag: 'ul', cls: 'nav-links' });
 
-  const linkText = ['About', 'Menu', 'Contact'];
-
-  linkText.forEach((el) => {
+  navTabs.forEach((el) => {
     const navLink = createElement({
       appendTo: navLinks, tag: 'li', cls: 'nav-link', txt: el,
     });
 
     navLink.addEventListener('click', () => {
-      displayMainSection(el);
-      setRecipeImg(el);
+      updateFeatAndMain(el);
     });
   });
 };
