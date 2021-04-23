@@ -1,15 +1,6 @@
 import './stylesheets/style.scss';
-
-import nav from './js/nav';
-import cover from './js/cover';
-import feature from './js/feature';
-import main from './js/main';
-import footer from './js/footer';
+import kickApp from "./js/kick";
 
 const content = document.getElementById('content');
+kickApp({parent: content});
 
-nav({ appendTo: content });
-cover({ appendTo: content });
-feature({ appendTo: content });
-main({ appendTo: content });
-footer({ appendTo: content });

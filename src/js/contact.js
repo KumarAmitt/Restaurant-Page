@@ -1,7 +1,5 @@
 import createElement from './tools';
-import {
-  contactTitle, contactFields,
-} from './texts';
+import { contactTitle, contactFields } from './texts';
 
 const contactItem = (parent, fieldName, fieldValue) => {
   const item = createElement({
