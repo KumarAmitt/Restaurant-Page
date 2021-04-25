@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Meddon&family=Montserrat&display=swap");
+
+body {
+  background: url("../images/biriyani.jpg") fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+// NAVBAR
+
+nav {
+  text-align: center;
+  background:
+    linear-gradient(
+      to bottom right,
+      rgba(3, 38, 35, 0.3),
+      rgba(3, 38, 35, 0.7)
+    );
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  .logo {
+    color: yellow;
+    font-family: "Meddon", cursive;
+    font-size: 1.8rem;
+    margin-top: -0.3em;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    padding-left: 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-link {
+    padding: 0.2em 0.5em;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}
+
+//COVER --------------
+
+.cover {
+  background:
+    linear-gradient(
+      to bottom right,
+      rgba(3, 38, 35, 0.3),
+      rgba(3, 38, 35, 0.7)
+    );
+  height: 60vh;
+  margin-top: 8.4em;
+  backdrop-filter: blur(4px);
+  padding-top: 1.4em;
+
+  &-content {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  &-p1 {
+    text-transform: uppercase;
+
+    span {
+      color: yellow;
+      text-transform: lowercase;
+      font-family: "Meddon", cursive;
+      font-size: 2.4rem;
+      padding-left: 0.2em;
+    }
+  }
+
+  &-p2 {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+  }
+}
+
+.feat-recipe {
+  position: absolute;
+  width: 100%;
+  top: 50vh;
+  text-align: center;
+
+  img {
+    width: 70%;
+  }
+}
+
+//MAIN ----------------
+
+main {
+  margin-top: 14em;
+  background:
+    linear-gradient(
+      to bottom right,
+      rgba(3, 38, 35, 0.3),
+      rgba(3, 38, 35, 0.7)
+    );
+  backdrop-filter: blur(4px);
+  padding: 0.5em;
+
+  .title {
+    text-align: center;
+  }
+
+  .desc {
+    padding: 0.5em;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.4;
+
+    h3 {
+      color: yellow;
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      font-size: 1.1rem;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.4em;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+        padding: 0.5em 2em;
+
+        span {
+          text-transform: capitalize;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .cInfo {
+      font-weight: bold;
+      color: yellow;
+      text-align: center;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+
+      span {
+        display: block;
+        padding-top: 0.5em;
+        font-size: 1rem;
+        color: #fff;
+        text-transform: none;
+      }
+    }
+  }
+}
+
+footer {
+  background:
+    linear-gradient(
+      to bottom right,
+      rgba(3, 38, 35, 0.3),
+      rgba(3, 38, 35, 0.7)
+    );
+  backdrop-filter: blur(4px);
+
+  p {
+    margin-bottom: 0;
+    padding: 1em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 420px) {
+  main {
+    margin-top: 20em;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      margin-left: 0.6em;
+      margin-top: -0.1em;
+    }
+
+    .nav-links {
+      margin-right: 0.6em;
+    }
+
+    .nav-link {
+      font-size: 1rem;
+      margin-left: 1em;
+    }
+  }
+
+  .cover {
+    margin-top: 4em;
+    display: flex;
+    align-items: center;
+
+    &-content {
+      margin-left: 44vw;
+      text-align: left;
+    }
+
+    &-p1 span {
+      font-size: 3.2rem;
+    }
+
+    &-p2 {
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .feat-recipe {
+    width: 40%;
+    height: calc(100vmin - 4em);
+    top: 4em;
+    text-align: left;
+    margin-left: 1em;
+    z-index: 1;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  main {
+    margin-bottom: 2.4em;
+    margin-top: 16vmin;
+
+    .title {
+      margin-left: 40vw;
+      font-size: 2.6rem;
+      color: yellow;
+    }
+
+    .desc {
+      margin-top: 3.2em;
+      padding: 0 2em 1em 20vw;
+      line-height: 1.8;
+
+      .cInfo {
+        display: flex;
+        width: 70%;
+        margin-left: 20%;
+        justify-content: space-between;
+      }
+    }
+  }
+}
